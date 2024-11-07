@@ -16,9 +16,10 @@ return new class extends Migration
             $table->timestamps();
             $table->string('img');
             $table->string('name');
-            $table->string('description');
             $table->string('stock_status');
             $table->string('price');
+            $table->string('variety');
+            $table->integer('size');
         });
     }
 

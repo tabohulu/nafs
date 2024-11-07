@@ -16,7 +16,6 @@
 					<thead>
 						<th scope="col">Review</th>
 						<th scope="col">Rating</th>
-						<th scope="col">Visible</th>
 						<th scope="col">Related Order</th>
 						<th scope="col">&nbsp;</th>
 						<th scope="col">&nbsp;</th>
@@ -26,13 +25,7 @@
                         <tr>
                         <td scope="row" style="overflow:hidden">{{ $review->review }}</td>
 							<td scope="row" style="overflow:hidden">{{ $review->rating }}/5</td>
-							<td scope="row" style="overflow:hidden">
-							@if(\App\Models\Orders::where('order_sn',$review->order_sn)->first()->shipped)
-								Yes
-							@else
-								No
-							@endif
-							</td>
+							
 							<td scope="row" style="overflow:hidden">{{$review->order_sn }}</td>
 							<td >
                             <form action="{{ url('/dashboard/reviews/'.$review->id) }}" method="GET">

@@ -17,6 +17,7 @@ return new class extends Migration
             $table->unsignedBigInteger('product_id');
             $table->integer('rating');
             $table->string('review');
+            $table->string('order_sn');
         });
     }
 

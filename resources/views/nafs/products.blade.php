@@ -3,10 +3,12 @@
 
 
 <!-- Contact Start -->
+
 <div class="container-fluid pt-5">
     <div class="container">
+    <h1 class="mt-3 mb-6 text-center">WELCOME TO HOME OF NAFS PRODUCTS!!</h1>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            
+        @if(count($img_gallery)>0 & !empty($img_gallery))
             <div class="carousel-inner ">
                 <div class="carousel-item active ">
                     <img style="max-height: 700px;" class="d-block w-100"  src="/img/gallery/{{$img_gallery[0]->img}}" alt="First slide">
@@ -23,6 +25,7 @@
                     <img style="max-height: 700px;" class="d-block w-100" src="..." alt="Third slide">
                 </div> -->
             </div>
+            @endif
             <a class="carousel-control-prev" role="button" data-slide="prev" onclick="plusSlides(-1)">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>

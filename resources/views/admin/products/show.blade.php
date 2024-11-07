@@ -52,17 +52,8 @@
               <label class="input-group-text" for="size">Size</label>
             </div>
             <div class="col-sm-2 form-control">
-            @if($product->size=='250') 
-            {{'250ml'}}
-            @elseif($product->size=='500') 
-            {{'500ml'}}
-            @elseif($product->size=='1000') 
-            {{'1.0L'}}
-            @elseif($product->size=='1500') 
-            {{'1.5L'}}
-            @elseif($product->size=='2000') 
-            {{'2.0L'}}
-            @endif
+            @if($product->size/(1000)<1){{$product->size}}ml @else{{$product->size/(1000)}}L @endif
+            
         </div>
           </div>
         </div>

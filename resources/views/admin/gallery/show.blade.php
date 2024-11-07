@@ -39,13 +39,13 @@
 
       <div class="col-sm-1"></div>
 
-      <form action="{{ url('/dashboard/gallery/'.$gallery->id) }}" method="POST">
+      {{--<form action="{{ url('/dashboard/gallery/'.$gallery->id) }}" method="POST">
 									{{ csrf_field() }}
                                     {{method_field('DELETE')}}
 									 	<button type="submit" class="col-sm-4 btn btn-danger">
 											<i class="glyphicon glyphicon-file"></i>Delete
 									 </button>
-								 </form>
+								 </form>--}}
      </div>
 
      </div>

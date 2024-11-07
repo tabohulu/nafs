@@ -45,13 +45,15 @@
               <label class="input-group-text" for="size">Size</label>
             </div>
             <div class="col-sm-2 form-control" style="background-color: white;">
-          <label class="radio-inline px-2"><input type="radio" name="size" id="s0" value="250" checked="true">250ml</label>
+          <label class="radio-inline px-2"><input type="radio" name="size" id="s0" value="200" checked="true">200ml</label>
 
-          <label class="radio-inline px-2"><input type="radio" name="size" id="s1" value="500" checked="true">500ml</label>
+          <label class="radio-inline px-2"><input type="radio" name="size" id="s1" value="450" checked="true">450ml</label>
         
-          <label class="radio-inline px-2"><input type="radio" name="size" id="s2" value="1000" style="padding-left: 5px;">1.0L</label>
+          <label class="radio-inline px-2"><input type="radio" name="size" id="s2" value="500" style="padding-left: 5px;">500ml</label>
 
-          <label class="radio-inline px-2"><input type="radio" name="size" id="s3" value="1500" style="padding-left: 5px;">1.5L</label>
+          <label class="radio-inline px-2"><input type="radio" name="size" id="s5" value="1000" style="padding-left: 5px;">1.0L</label>
+
+          <label class="radio-inline px-2"><input type="radio" name="size" id="s3" value="2500" style="padding-left: 5px;">2.5L</label>
 
           <label class="radio-inline px-2"><input type="radio" name="size" id="s4" value="4500" style="padding-left: 5px;">4.5L</label>
         </div>

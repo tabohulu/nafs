@@ -21,7 +21,13 @@ return new class extends Migration
             $table->string('delivery_method');
             $table->string('momo_name');
             $table->string('momo_number');
+            $table->string('customer_name');
+            $table->string('customer_number');
             $table->string('location');
+            $table->string('date');
+            $table->tinyInteger('cancelled');
+            $table->tinyInteger('shipped');
+            $table->string('order_sn');
         });
     }
 

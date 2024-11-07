@@ -62,8 +62,11 @@
                     <tbody>
                         @foreach($orders as $order)
                         <tr>
+						@if(!empty(App\Models\Product::find($order->product_id)))
                         <td scope="row" style="overflow:hidden">{{ $order->date }} @if($order->shipped) <br>( Shipped ) @endif</td>
-							<td scope="row" style="overflow:hidden">{{App\Models\Product::find($order->product_id)->name}}({{App\Models\Product::find($order->product_id)->variety}})</td>
+							<td scope="row" style="overflow:hidden">
+							{{App\Models\Product::find($order->product_id)->name}}({{App\Models\Product::find($order->product_id)->variety}})
+						</td>
 							<td scope="row" style="overflow:hidden">{{$order->quantity }}</td>
 							<td scope="row" style="overflow:hidden">GH&#8373;{{$order->total }}</td>
 							<td >
@@ -92,6 +95,7 @@
 								 </form>
                             </td>
                         </tr>
+						@endif
 
                         @endforeach
                     </tbody>

@@ -47,13 +47,15 @@
               <label class="input-group-text" for="size">Size</label>
             </div>
             <div class="col-sm-2 form-control" style="background-color: white;">
-          <label class="radio-inline px-2"><input type="radio" name="size" id="s0" value="250"  style="padding-left: 5px;"@if($products->size=='250') checked @endif>250ml</label>
+          <label class="radio-inline px-2"><input type="radio" name="size" id="s0" value="200"  style="padding-left: 5px;"@if($products->size=='200') checked @endif>200ml</label>
 
-          <label class="radio-inline px-2"><input type="radio" name="size" id="s1" value="500"  style="padding-left: 5px;"@if($products->size=='500') checked @endif>500ml</label>
+          <label class="radio-inline px-2"><input type="radio" name="size" id="s1" value="450"  style="padding-left: 5px;"@if($products->size=='450') checked @endif>450ml</label>
         
-          <label class="radio-inline px-2"><input type="radio" name="size" id="s2" value="1000" style="padding-left: 5px;"@if($products->size=='1000') checked @endif>1.0L</label>
+          <label class="radio-inline px-2"><input type="radio" name="size" id="s2" value="500" style="padding-left: 5px;"@if($products->size=='500') checked @endif>500ml</label>
 
-          <label class="radio-inline px-2"><input type="radio" name="size" id="s3" value="1500" style="padding-left: 5px;"@if($products->size=='1500') checked @endif>1.5L</label>
+          <label class="radio-inline px-2"><input type="radio" name="size" id="s5" value="1000" style="padding-left: 5px;"@if($products->size=='1000') checked @endif>1.0L</label>
+
+          <label class="radio-inline px-2"><input type="radio" name="size" id="s3" value="2500" style="padding-left: 5px;"@if($products->size=='2500') checked @endif>1.5L</label>
 
           <label class="radio-inline px-2"><input type="radio" name="size" id="s4" value="4500" style="padding-left: 5px;"@if($products->size=='4500') checked @endif>4.5L</label>
         </div>
